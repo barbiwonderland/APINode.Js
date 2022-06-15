@@ -10,7 +10,7 @@ let cats = [
 ];
 
 app.get("/", (request, response) => {
-  response.send("<h1>hello world </h1>");
+  response.send("<h1>App gatitos <3</h1>");
 });
 app.get("/api/cats", (request, response) => {
   response.json(cats);
