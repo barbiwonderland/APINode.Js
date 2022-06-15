@@ -47,7 +47,7 @@ app.delete("/api/cats/:id", (request, response) => {
   cats = cats.filter((cat) => cat.id !== id);
   response.status(204).end();
 });
-const PORT = 3200;
+const PORT = process.env.PORT || 3200;
 app.listen(PORT, () => {
   console.log("server run");
 });
