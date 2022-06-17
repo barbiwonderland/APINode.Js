@@ -4,13 +4,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const catRoute = require("./routes/cat");
-const cors = require("cors");
-app.use(cors());
+
 
 // settings
 const app = express();
 const port = process.env.PORT || 3200;
-
+const cors = require("cors");
+app.use(cors());
 // middlewares
 app.use(express.json());
 // app.use("/api", catRoute);
