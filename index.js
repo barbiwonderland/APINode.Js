@@ -4,6 +4,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const catRoute = require("./routes/cat");
+const cors = require("cors");
+app.use(cors());
 
 // settings
 const app = express();
@@ -24,7 +26,7 @@ mongoose
   .then(() => console.log("Connected to MongoDB Atlas"))
   .catch((error) => console.error(error));
 
-app.use("/api", swaggerUi.serve, swaggerUi.setup(swaggerDocument,catRoute));
+app.use("/api", swaggerUi.serve, swaggerUi.setup(swaggerDocument, catRoute));
 
 // server listening
 app.listen(port, () => console.log("Server listening to", port));

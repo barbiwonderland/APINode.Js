@@ -6,7 +6,7 @@
       "description": "Project to practice Node.js and MongoDB",
       "license": {
         "name": "MIT",
-        "url": "https://opensource.org/licenses/MIT"
+        "url": "http://opensource.org/licenses/MIT"
       }
     },
     "host": "https://glacial-lowlands-02158.herokuapp.com/",
