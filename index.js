@@ -13,7 +13,7 @@ const cors = require("cors");
 app.use(cors());
 // middlewares
 app.use(express.json());
-// app.use("/api", catRoute);
+app.use("/api", catRoute);
 
 // routes
 app.get("/", (req, res) => {
@@ -26,7 +26,6 @@ mongoose
   .then(() => console.log("Connected to MongoDB Atlas"))
   .catch((error) => console.error(error));
 
-app.use("/api", swaggerUi.serve, swaggerUi.setup(swaggerDocument, catRoute));
 
 // server listening
 app.listen(port, () => console.log("Server listening to", port));

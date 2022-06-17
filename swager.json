@@ -22,7 +22,7 @@
     "produces": ["application/json"],
 
         "paths": {
-          "/cats": {
+          "/getcats": {
             "get": {
               "tags": ["cats"],
               "summary": "Get all cats in system",
