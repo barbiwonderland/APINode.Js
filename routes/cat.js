@@ -1,6 +1,7 @@
 const express = require("express");
 const catSchema = require("../models/Cat");
 
+const router = express.Router();
 
 // create cat
 router.post("/cats", (req, res) => {
