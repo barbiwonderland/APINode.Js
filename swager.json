@@ -9,7 +9,7 @@
         "url": "http://opensource.org/licenses/MIT"
       }
     },
-    "host": "https://glacial-lowlands-02158.herokuapp.com/",
+    "host": "http://glacial-lowlands-02158.herokuapp.com/",
     "basePath": "api",
     "tags": [
       {
