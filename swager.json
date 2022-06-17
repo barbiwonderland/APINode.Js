@@ -9,8 +9,8 @@
         "url": "https://opensource.org/licenses/MIT"
       }
     },
-    "host": "localhost:3200",
-    "basePath": "/api",
+    "host": "https://glacial-lowlands-02158.herokuapp.com/",
+    "basePath": "api",
     "tags": [
       {
         "name": "Cats",
@@ -22,7 +22,7 @@
     "produces": ["application/json"],
 
         "paths": {
-          "api/cats": {
+          "/cats": {
             "get": {
               "tags": ["cats"],
               "summary": "Get all cats in system",
